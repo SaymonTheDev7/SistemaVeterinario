@@ -7,12 +7,13 @@ public abstract class Animal {
     private Cliente dono;
     private ArrayList <Consulta> consultas;
 
-    public Animal(String nome, String dataNascimento, Cliente dono) {
+    public Animal(String nome, String dataNascimento) {
         this.nome = nome;
         this.dataNascimento = dataNascimento;
-        this.dono = dono;
         consultas = new ArrayList<>();
     }
+
+
 
     public String getNome() {
         return nome;
@@ -21,6 +22,7 @@ public abstract class Animal {
     public String getDataNascimento() {
         return dataNascimento;
     }
+
 
     public Cliente getDono() {
         return dono;
@@ -58,6 +60,7 @@ public abstract class Animal {
 
         return "Dono cadastrado com sucesso.";
     }
+
 
     public void removerDono () {
 

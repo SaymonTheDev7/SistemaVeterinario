@@ -2,8 +2,8 @@ public class Cachorro extends Animal {
 
     private String raca;
     private boolean adestrado;
-    public Cachorro(String nome, String dataNascimento, Cliente dono, String raca, boolean adestrado) {
-        super(nome, dataNascimento, dono);
+    public Cachorro(String nome, String dataNascimento, String raca, boolean adestrado) {
+        super(nome, dataNascimento);
         this.raca = raca;
         this.adestrado = adestrado;
     }
